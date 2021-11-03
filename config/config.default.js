@@ -28,6 +28,20 @@ module.exports = appInfo => {
     database: 'egg_blog',
   };
 
+  // 跨越配置
+  config.security = {
+    csrf: {
+      enable: true,
+      // ignoreJSON: true,
+    },
+  };
+  config.cors = {
+    credentials: true,
+    // AccessControlAllowCredentials: true,
+    // AccessControlAllowOrigin: true,
+    allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH',
+  };
+
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',
