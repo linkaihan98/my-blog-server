@@ -6,7 +6,7 @@ module.exports = {
     await queryInterface.createTable('users', {
       id: { type: INTEGER, primaryKey: true },
       username: STRING(30),
-      password: STRING(30),
+      password: STRING(200),
       created_at: DATE,
       updated_at: DATE,
     });

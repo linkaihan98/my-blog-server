@@ -18,3 +18,9 @@ exports.routerPlus = {
   enable: false,
   package: 'egg-router-plus',
 };
+
+//  validate 插件
+exports.validate = {
+  enable: true,
+  package: 'egg-validate',
+};

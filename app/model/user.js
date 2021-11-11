@@ -2,7 +2,7 @@
  * @Author: KAAN
  * @Date: 2021-11-03 18:42:12
  * @LastEditors: KAAN
- * @LastEditTime: 2021-11-03 20:17:06
+ * @LastEditTime: 2021-11-11 17:53:09
  * @Descripttion: User Model
  */
 
@@ -14,7 +14,7 @@ module.exports = app => {
   const User = app.model.define('users', {
     id: { type: INTEGER, primaryKey: true },
     username: STRING(30),
-    password: STRING(30),
+    password: STRING(200),
     created_at: DATE,
     updated_at: DATE,
   });
